@@ -9,13 +9,13 @@
 <body>
     <div class="nav-container">
         <header>
-            <a href="index.html" class="logo">WF</a>
+            <a href="index.html" class="logo"><img src="images/logo.svg" alt="logo"></a>
 
             <nav>
                 <ul>
                     <li><a href="#">My Work</a></li>
                     <li><a href="#">My Skills</a></li>
-                    <li><a href="#">My Hire me</a></li>
+                    <li><a href="#">Hire me</a></li>
                 </ul>
             </nav>
         </header>
@@ -29,19 +29,19 @@
 
     <div class="hero">
         <div class="content">
-            <h1>Beautifully Crafted Web Experiences</h1>
-            <div class="meet">
+            <h1 class="stagger1">Beautifully Crafted Web Experiences</h1>
+            <div class="meet stagger1">
                 <p>Meet Felipe Wolff</p>
             </div>
-            <svg class="scroll" width="67" height="128" viewBox="0 0 67 128">
+            <svg class="scroll stagger1" width="67" height="128" viewBox="0 0 67 128">
                 <g id="Scrool" transform="translate(-289 -728)">
                   <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(289 728)" fill="none" stroke="#fff" stroke-width="8">
                     <rect width="67" height="128" rx="33.5" stroke="none"/>
                     <rect x="4" y="4" width="59" height="120" rx="29.5" fill="none"/>
                   </g>
-                  <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(307 754)" fill="#fff" stroke="#707070" stroke-width="1">
-                    <circle cx="16" cy="16" r="16" stroke="none"/>
-                    <circle cx="16" cy="16" r="15.5" fill="none"/>
+                  <g  class="circle" id="Ellipse_1" data-name="Ellipse 1" transform="translate(307 754)" fill="#fff" stroke="#707070" stroke-width="1">
+                    <circle  cx="16" cy="16" r="16" stroke="none"/>
+                    <circle  cx="16" cy="16" r="15.5" fill="none"/>
                   </g>
                 </g>
               </svg>
@@ -71,7 +71,7 @@
             </div>
         </div>
 
-        <img src="images/Featured-Image.png" alt="featured-project" class="right transition2">
+        <img src="images/featured.jpg" alt="featured-project" class="right transition2">
     </section>
 
     <section class="skills">
@@ -103,15 +103,75 @@
     </section>
 
     <section class="portfolio">
-    <div class="portfolio-container transition3"></div>
-    <div class="portfolio-left">
-        <div class="inner">
-            <p class="subtitle">Foo Track</p>
-            <p class="featured-title">Foo Track.com</p>
-            <p class="featured-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, numquam.</p>
+        <div class="portfolio-container transition3">
+            <div class="portfolio-left">
+                <div class="inner">
+                    <p class="subtitle">Foo Track</p>
+                    <p class="featured-title">Foo Track.com</p>
+                    <p class="featured-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, numquam.</p>
+                </div>
+            </div>
+          <a href="#" > <img src="images/featured.jpg" alt="whatever"></a>
         </div>
-        <a href="#" > <img src="images/Featured-Image.png" alt="whatever"></a>
-    </div>
-</section>
+    </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
+
+
+<script>
+    
+    gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+
+        tl.from('.content', {
+            y: '-30%',
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut
+        })
+        tl.from('.stagger1', {
+            opacity: 0,
+            y: -50,
+            stagger: .3,
+            ease: Power4.easeOut,
+            duration: 2
+        }, "-=1.5")
+        tl.from('.hero-design', {
+            opacity: 0, y: 50, ease: Power4.easeOut, duration: 1
+        }, "-=2")
+
+        gsap.from(".square-anim", {
+            stagger: .2,
+            scale: 0.1,
+            duration: 1,
+            ease: Back.easeOut.config(1.7)
+        })
+
+        gsap.from(".transition2", {
+            scrollTrigger: {
+                trigger: '.transition2',
+                start: "top bottom"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .3
+        })
+
+        gsap.from(".transition3", {
+            scrollTrigger: {
+                trigger: ".transition3",
+                start: "top center"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .6
+        });
+    
+</script>
+
+
 </body>
 </html>

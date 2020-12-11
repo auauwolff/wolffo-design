@@ -34,8 +34,8 @@ header{
     padding: 2em;
 
     .logo{
-        color: #00f7ff;
-        font-weight: bold;
+        width: 8%;
+        margin-top: 0.5em;
     }
 
         ul{
@@ -43,7 +43,7 @@ header{
 
             a{
                 display: block;
-                padding: 0 1em;
+                padding: 1em 1em;
 
             }
         }
@@ -82,6 +82,11 @@ section{
 
 .featured{
     position: relative;
+
+    img{
+        border-radius: 10px;
+        width: 100%;
+    }
 }
 .featured::before{
     content: "";
@@ -90,9 +95,10 @@ section{
     height: 200px;
     border-radius: 50%;
     background: #E5D5FA;
-    top: 0;
-    left: 0;
+    top: -130px;
+    left: 140px;
     z-index: -1;
+    
 }
 
 .subtitle{
@@ -141,7 +147,8 @@ section{
         }
 
         &.two{
-            width: 100px;
+            width: 140px;
+            
         }
 
         &.three{
@@ -172,9 +179,12 @@ section{
         text-align: left;
     }
 
+   
+
     .featured, .portfolio-container{
         display: grid;
         grid-template-columns: 40% auto;
+       
     }
 
     .left, .portfolio-left{
@@ -205,6 +215,7 @@ section{
 
     .portfolio-container img{
         margin-left: 2em;
+        border-radius: 20px;
        
     }
 }
@@ -222,6 +233,10 @@ section{
 
         header{
             background: #6700ee;
+        }
+
+        .logo{
+            width: 6%;
         }
     }
 
@@ -246,9 +261,22 @@ section{
             width: 7em;
             float: right;
             img{
-                width: 20px;
+                width: 22px;
             }
         }
+    }
+
+    .featured::before{
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: #E5D5FA;
+        top: 200px;
+        left: -80px;
+        z-index: -1;
+        
     }
 
     .hero{
@@ -292,7 +320,7 @@ section{
     }
 
     .social-header{
-        padding: 2em 10em 2em 0;
+        padding: 3.5em 10em 2em 0;
     }
     section {
         padding: 10em 10em 4em 10em;
@@ -322,4 +350,23 @@ section{
         padding: 9em 20em 6em 20em;
     }
 
+}
+
+
+.circle{
+    animation: circleAnim 1.5s infinite alternate-reverse;
+
+
+}
+
+@keyframes circleAnim {
+    from {
+        transform: translate(307px, 754px) ;
+        z-index: 5;
+    }
+
+    to {
+        transform: translate(307px, 800px) ;
+        z-index: 5;
+    }
 }
