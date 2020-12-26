@@ -66,7 +66,7 @@ header{
     color: white;
     display: grid;
     text-align: center;
-    padding: 5.5em;
+    padding: 5.7em;
 }
 
 .meet{
@@ -108,7 +108,9 @@ section{
     border-radius: 50%;
     background: #E5D5FA;
     top: -130px;
-    left: 140px;
+    //left: 140px;
+    left: 50%;
+    margin-left: -100px;
     z-index: -1;
     
 }
@@ -210,9 +212,7 @@ footer{
     
 }
 
-@media only screen and (max-width: 499px) {
-    
-  }
+
 
 @media only screen and (min-width: 600px) {
     .featured::before{
@@ -223,7 +223,9 @@ footer{
         border-radius: 50%;
         background: #E5D5FA;
         top: -130px;
-        left: 190px;
+        //left: 190px;
+        // left: 50%;
+        margin-left: -50px;
         z-index: -1;
         
     }
@@ -330,7 +332,7 @@ footer{
     .featured, .portfolio{
         text-align: left;
     }
-
+    
    
     .featured, .portfolio-container{
         display: grid;
