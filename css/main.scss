@@ -66,7 +66,7 @@ header{
     color: white;
     display: grid;
     text-align: center;
-    padding: 4em;
+    padding: 5.5em;
 }
 
 .meet{
@@ -209,6 +209,10 @@ footer{
     width: 30%;
     
 }
+
+@media only screen and (max-width: 499px) {
+    
+  }
 
 @media only screen and (min-width: 600px) {
     .featured::before{
