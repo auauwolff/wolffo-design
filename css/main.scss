@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
 
+html{
+scroll-behavior: smooth;
+}
+
 body{
     height: 100vh;
     margin: 0;
@@ -14,6 +18,7 @@ ul{
 
 a{
     text-decoration: none;
+    
 }
 
 img{
@@ -25,6 +30,9 @@ img{
 
     a{
         color: white;
+        &:hover{
+            color: aqua;
+        }
     }
 }
 
@@ -68,6 +76,10 @@ header{
     width: 200px;
     font-weight: bold;
     color: #ff64cb;
+    a {
+        color:  #ff64cb;
+    }
+    
 }
 
 .scroll{
@@ -135,6 +147,7 @@ section{
     padding: 2em;
     border-radius: 1em;
     margin-bottom: 1em;
+    
 
     .icon-container{
         height: 100px;
@@ -171,19 +184,154 @@ section{
 }
 
 .portfolio-container a img{
-    margin-bottom: 2em;
+    margin: 3em 0em;
+    border-radius: 20px;
+}
+
+footer{
+    background: #6e00ff;
+    padding: 2em 4em 3em 5em ;
+    position: relative;
+    //overflow: hidden;
+
+    .logo img{
+        width: 9%;
+        
+        
+    }   
+}
+
+.footer-design{
+    display: unset;
+    position: absolute;
+    left: 65%;
+    top: -30%;
+    width: 30%;
+    
+}
+
+@media only screen and (min-width: 600px) {
+    .featured::before{
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: #E5D5FA;
+        top: -130px;
+        left: 190px;
+        z-index: -1;
+        
+    }
+
+    .footer-design{
+        display: unset;
+        position: absolute;
+        left: 65%;
+        top: -25%;
+        width: 30%;
+        
+    }
 }
 
 @media only screen and (min-width: 800px) {
+    .hero{
+        height: 110vh;
+        
+    }
+
+    .nav-container{
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+
+        header{
+            background: #6700ee;
+        }
+
+        .logo{
+            width: 8%;
+        }
+    }
+
+    header{
+            padding: 2em 2em 2em 4em;
+    }
+
+    .social-header{
+        padding: 3em 4em 2em 0;
+    }
+
+    section{
+        padding: 4em;
+    }
+
+    .social-header{
+        display: block;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 7em;
+            float: right;
+            img{
+                width: 22px;
+            }
+        }
+    }
+
+    .featured::before{
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: #E5D5FA;
+        top: 40px;
+        left: -120px;
+        z-index: -1;
+        
+    }
+
+
+    .hero{
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+        padding: 0;
+
+        .content{
+            background: #6e00ff;
+            padding: 6em 8em 6em 4em;
+            text-align: left;
+
+            h1{
+                font-size: 3em;
+                line-height: 1.2em;
+            }
+        }
+    }
+        .meet{
+            margin: unset;
+        }
+
+        .hero-design{
+            display: unset;
+            margin-left: -50%;
+            margin-top: 15%;
+            width: 100%;
+        }
+    
+    
     .featured, .portfolio{
         text-align: left;
     }
 
    
-
     .featured, .portfolio-container{
         display: grid;
         grid-template-columns: 40% auto;
+        margin-top: -2em;
        
     }
 
@@ -200,7 +348,7 @@ section{
     .skills{
         margin-top: -5em;
         margin-bottom: -7em;
-        padding-top: 7em;
+        padding-top: 5em;
     }
 
     .skills-container ul{
@@ -216,8 +364,30 @@ section{
     .portfolio-container img{
         margin-left: 2em;
         border-radius: 20px;
+        
        
     }
+
+
+    .footer-design{
+        display: unset;
+        position: absolute;
+        left: 65%;
+        top: -24%;
+        width: 30%;
+        
+    }
+
+    footer {
+        .logo img{
+            width: 7%;
+            
+            
+        } 
+    }
+
+
+
 }
 
 @media only screen and (min-width: 1050px) {
@@ -310,6 +480,26 @@ section{
         .portfolio img{
             float: right;
             max-width: 500px;
+        }
+
+        footer{
+            padding: 2em 3em 2em 5em ;
+        
+            .logo img{
+                width: 4%;
+                margin-left: 5em;
+                
+                
+            }   
+        }
+        
+        .footer-design{
+            display: unset;
+            position: absolute;
+            left: 65%;
+            top: -25%;
+            width: 30%;
+            
         }
 }
 
