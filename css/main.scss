@@ -337,7 +337,7 @@ footer{
     .featured, .portfolio-container{
         display: grid;
         grid-template-columns: 40% auto;
-        margin-top: -2em;
+        margin-top: 2em;
        
     }
 
@@ -348,7 +348,7 @@ footer{
 
     .right{
         margin-left: 2em;
-        margin-top: 1em;
+        margin-top:-1em;
     }
 
     .skills{
