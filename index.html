@@ -15,10 +15,30 @@
                 <ul>
                     <li><a href="#S1">My Work</a></li>
                     <li><a href="#S2">My Skills</a></li>
-                    <li><a href="#">Hire me</a></li>
+                    <li class="contact"><a href="#">Hire me</a></li>
                 </ul>
             </nav>
         </header>
+
+        <div class="modal-form">
+            <div class="modal">
+              <h3>Contact Form</h3>
+              <form class= "contact-form" name= "contact-f" method="POST" data-netlify="true">
+                <label for="fname">Name:</label><br>
+                <input type="text" class="input-field" id="fname" name="name"><br>
+                <label for="mmobile">Mobile:</label><br>
+                <input type="tel"  class="input-field mobile" id="mobile" name="mobile" ><br>
+                <label for="email">Email:</label><br>
+                <input type="email" class="input-field" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea name="message" class="text-field" id="text" ></textarea><br>
+                <input type="submit" value="Send" class="btn">
+                <span class="close">X</span>
+              </form>
+            </div>
+          </div>
+      
+
         <div class="social-header">
             <ul>
                 <li><a href="https://github.com/auauwolff"><img src="images/iconfinder_mark-github_298822.svg" alt="GitHub-logo"></a></li>
@@ -228,6 +248,19 @@
             duration: 1.2,
             stagger: .6
         });
+
+
+var btnContact = document.querySelector(".contact");
+var modalBg = document.querySelector(".modal-form");
+var close = document.querySelector(".close");
+
+btnContact.addEventListener('click', function () {
+    modalBg.classList.add("active");
+});
+
+close.addEventListener('click', function () {
+    modalBg.classList.remove("active");
+});
     
 </script>
 
