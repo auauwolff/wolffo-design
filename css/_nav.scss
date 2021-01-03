@@ -1,0 +1,24 @@
+.nav-container{
+    background: #6700EE;
+
+    @include for-tablet-landscape-up{
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+
+        header{
+            background: #6700ee;
+        }
+
+        .logo{
+            width: 8%;
+        }
+    }
+
+    a{
+        color: white;
+        &:hover{
+            color: aqua;
+        }
+    }
+}

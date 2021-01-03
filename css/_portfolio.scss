@@ -1,0 +1,13 @@
+.portfolio{
+    background: #f7f7f7;
+
+    @include for-tablet-landscape-up{
+        padding-top: 7em;
+    }
+}
+
+.portfolio-container a img{
+    margin: 0em 0em 6em 0em;
+    border-radius: 20px;
+}
+

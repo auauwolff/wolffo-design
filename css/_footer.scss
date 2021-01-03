@@ -1,0 +1,32 @@
+
+footer{
+    background: #6e00ff;
+    padding: 2em 4em 3em 5em ;
+    position: relative;
+    //overflow: hidden;
+
+    .logo img{
+        width: 9%;
+        
+        
+    }   
+}
+
+.footer-design{
+    display: unset;
+    position: absolute;
+    left: 65%;
+    top: -30%;
+    width: 30%;
+
+    @include for-tablet-portrait-up {
+        
+            display: unset;
+            position: absolute;
+            left: 65%;
+            top: -25%;
+            width: 30%;
+            
+    }
+    
+}
