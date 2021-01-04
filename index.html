@@ -3,26 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazing</title>
+    <title>Wolffo.design</title>
+    <link rel="icon" type="image/png"  href="images/logo.png" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="nav-container">
         <header>
-            <a href="index.html" class="logo"><img src="images/logo.svg" alt="logo"></a>
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
 
             <nav>
                 <ul>
                     <li><a href="#S1">My Work</a></li>
                     <li><a href="#S2">My Skills</a></li>
-                    <li><a href="#">Hire me</a></li>
+                    <li class="contact"><a href="#">Hire me</a></li>
                 </ul>
             </nav>
         </header>
+
+        <div class="modal-form">
+            <div class="modal">
+              <h3>Contact Form</h3>
+              <form class= "contact-form" name= "contact-f" method="POST" data-netlify="true">
+                <label for="fname">Name:</label><br>
+                <input type="text" class="input-field" id="fname" name="name"><br>
+                <label for="mmobile">Mobile:</label><br>
+                <input type="tel"  class="input-field mobile" id="mobile" name="mobile" ><br>
+                <label for="email">Email:</label><br>
+                <input type="email" class="input-field" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea name="message" class="text-field" id="text" ></textarea><br>
+                <input type="submit" value="Send" class="btn">
+                <span class="close">X</span>
+              </form>
+            </div>
+          </div>
+      
+
         <div class="social-header">
             <ul>
                 <li><a href="https://github.com/auauwolff"><img src="images/iconfinder_mark-github_298822.svg" alt="GitHub-logo"></a></li>
-                <li><a href="https://www.facebook.com/WolffGogoDancer"><img src="images/Facebook-logo.svg" alt="Facebook-logo"></a></li>
+                <li><a href="https://www.linkedin.com/in/felipe-wolff-a2575624/"><img src="images/linkedin.svg" alt="linkedin-logo"></a></li>
                 <li><a href="https://www.instagram.com/felipewolffo/"><img src="images/Instagram-logo.svg" alt="Instagram-logo"></a></li>
             </ul>
         </div>
@@ -88,14 +109,14 @@
                 </li>
                 <li class="transition2">
                     <div class="icon-container two">
-                        <img src="images/frontend-logo.svg" alt="FrontEndDev-logo">
+                        <img src="images/frontend-logo.png" alt="FrontEndDev-logo">
                     </div>
                     <p class="skill-title">Frontend Development</p>
                     <div class="featured-desc skill-desc"> Converting data to a graphical interface, bringing life to the project.</div>
                 </li>
                 <li class="transition2">
                     <div class="icon-container three">
-                        <img src="images/Logo-logo.svg" alt="logo">
+                        <img src="images/Logo-logo.png" alt="logo">
                     </div>
                     <p class="skill-title">Identity Design</p>
                     <div class="featured-desc skill-desc">We can help you to identify and develop the best way to show your business online!</div>
@@ -109,9 +130,9 @@
         <div class="portfolio-container transition3">
             <div class="portfolio-left">
                 <div class="inner">
-                    <p class="subtitle">Tap and Grind - Cafe</p>
+                    <p class="subtitle subtitle-portfolio">Tap and Grind - Cafe</p>
                     <p class="featured-title">WebDesign/Development</p>
-                    <p class="featured-desc">Beautiful project to bring an online presence to this amazing Cafe, located in Australia. Customers now are able to find the menu, photos and catering order with a simple, however, modern approuch.</p>
+                    <p class="featured-desc desc-portfolio">Beautiful project to bring an online presence to this amazing Cafe, located in Australia. Customers now are able to find the menu, photos and catering order with a simple, however, modern approuch.</p>
                 </div>
             </div>
           <a href="https://happy-mahavira-a44cde.netlify.app/" > <img src="images/featured.jpg" alt="whatever"></a>
@@ -120,9 +141,9 @@
         <div class="portfolio-container transition3">
             <div class="portfolio-left">
                 <div class="inner">
-                    <p class="subtitle">Leggo - Engineers</p>
+                    <p class="subtitle subtitle-portfolio">Leggo - Engineers</p>
                     <p class="featured-title">Web Design</p>
-                    <p class="featured-desc">Modern project for an Enginering company located in Brazil, built to showcase potential customers what is Leggo about and achievements that the company made along the years. Now made easier with an responsible online website. </p>
+                    <p class="featured-desc desc-portfolio" >Modern project for an Enginering company located in Brazil, built to showcase potential customers what is Leggo about and achievements that the company made along the years. Now made easier with an responsible online website. </p>
                 </div>
             </div>
           <a href="#" > <img src="images/leggo.png" alt="whatever"></a>
@@ -131,9 +152,9 @@
         <div class="portfolio-container transition3">
             <div class="portfolio-left">
                 <div class="inner">
-                    <p class="subtitle">Instatel - Security</p>
+                    <p class="subtitle subtitle-portfolio">Instatel - Security</p>
                     <p class="featured-title">Web Design</p>
-                    <p class="featured-desc">Security company located in Brazil, they wanted to redesign their old website for a modern approuch in order to reivent their online identity. </p>
+                    <p class="featured-desc desc-portfolio">Security company located in Brazil, they wanted to redesign their old website for a modern approuch in order to reivent their online identity. </p>
                 </div>
             </div>
           <a href="https://xd.adobe.com/view/71b85e33-42fc-4452-ba95-356f26a5e6de-24eb/?fullscreen" > <img src="images/instatel.png" alt="whatever"></a>
@@ -142,9 +163,9 @@
         <div class="portfolio-container transition3">
             <div class="portfolio-left">
                 <div class="inner">
-                    <p class="subtitle">Powerup - Watersports Products</p>
+                    <p class="subtitle subtitle-portfolio">Powerup - Watersports Products</p>
                     <p class="featured-title">Web Design</p>
-                    <p class="featured-desc">Located in Australia, John an amazing inventor needed an website to list his inventions/products in order to attract investors and potential customers to his company. </p>
+                    <p class="featured-desc desc-portfolio">Located in Australia, John an amazing inventor needed an website to list his inventions/products in order to attract investors and potential customers to his company. </p>
                 </div>
             </div>
           <a href="#" > <img src="images/powerup.png" alt="whatever"></a>
@@ -153,9 +174,17 @@
     </section>
 
     <footer>
-        <a href="index.html" class="logo"><img src="images/logo.svg" alt="logo"></a>
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+        <div class="social-footer">
+            <ul>
+                <li><a href="https://github.com/auauwolff"><img src="images/github-white.svg" alt="GitHub-logo"></a></li>
+                <li><a href="https://www.linkedin.com/in/felipe-wolff-a2575624/"><img src="images/linkedin-white.svg" alt="linkedin-logo"></a></li>
+                <li><a href="https://www.instagram.com/felipewolffo/"><img src="images/Instagram-white.svg" alt="Instagram-logo"></a></li>
+            </ul>
+        </div>
+        <p>&#169; Wolffo Design 2021</p>
         <div class="svg-footer">
-        <svg  width="690" height="140" viewBox="0 0 690 688" class="footer-design">
+        <svg  width="690" height="688" viewBox="0 0 690 688" class="footer-design">
             <g id="Hero-Squares" transform="translate(-812 -232)">
               <rect class="square-anim" id="Rectangle_4" data-name="Rectangle 4" width="172" height="172" rx="26" transform="translate(1153 232)" fill="#6000ff"/>
               <rect class="square-anim" id="Rectangle_12" data-name="Rectangle 12" width="172" height="172" rx="26" transform="translate(1330 402)" fill="#6000ff" opacity="0.42"/>
@@ -228,6 +257,19 @@
             duration: 1.2,
             stagger: .6
         });
+
+
+var btnContact = document.querySelector(".contact");
+var modalBg = document.querySelector(".modal-form");
+var close = document.querySelector(".close");
+
+btnContact.addEventListener('click', function () {
+    modalBg.classList.add("active");
+});
+
+close.addEventListener('click', function () {
+    modalBg.classList.remove("active");
+});
     
 </script>
 
