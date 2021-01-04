@@ -1,9 +1,22 @@
 .skills{
     background: #ff64cb;
-    @include for-tablet-landscape-up {
-        padding: 3em 8em;
-    }
+        
+        @include for-tablet-landscape-up {
+            padding: 3em 8em;
+        }
 
+        @include for-desktop-up {
+            margin-top: -4.5em;
+        }
+
+}
+
+@include for-desktop-up {
+    .skills-container ul{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1em;
+    }
 }
 
 .skills-container ul li{
@@ -12,8 +25,6 @@
     border-radius: 1em;
     margin-bottom: 1em;
 
-   
-    
 
     .icon-container{
         height: 100px;

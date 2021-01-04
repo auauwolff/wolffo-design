@@ -3,9 +3,10 @@ header{
     justify-content: space-between;
     padding: 2em;
 
-    @include for-tablet-landscape-up{
-        padding: 2em 2em 2em 4em;
-    }
+            @include for-tablet-landscape-up{
+                padding: 2em 2em 2em 4em;
+            }
+
 
     .logo{
         width: 8%;
@@ -26,22 +27,35 @@ header{
 .social-header , .hero-design{
     display: none;
 
-    @include for-tablet-landscape-up{
-        padding: 3em 4em 2em 0;
-        display: block;
-        
+            @include for-tablet-landscape-up{
+                padding: 3em 4em 2em 0;
+                display: block;
+                
 
-        ul{
-            display: flex;
-            justify-content: space-between;
-            width: 7em;
-            float: right;
-            img{
-                width: 22px;
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 7em;
+                    float: right;
+                    img{
+                        width: 22px;
+                    }
+                }
             }
+
+            @include for-desktop-up {
+                padding: 2em 4em 2em 0;
+            }
+}
+
+    @include for-desktop-up {
+        .hero-design{
+            display: unset;
+            margin-left: -50%;
+            margin-top: 15%;
+            width: 100%;
         }
     }
-}
 
 .hero{
     background: #6e00ff;
@@ -50,24 +64,29 @@ header{
     text-align: center;
     padding: 5.7em;
 
-    @include for-tablet-landscape-up {
-        height: 110vh;
-        display: grid;
-        grid-template-columns: 66% auto;
-        background: unset;
-        padding: 0;
+            @include for-tablet-landscape-up {
+                height: 110vh;
+                display: grid;
+                grid-template-columns: 66% auto;
+                background: unset;
+                padding: 0;
 
-        .content{
-            background: #6e00ff;
-            padding: 6em 8em 6em 4em;
-            text-align: left;
+                    .content{
+                        background: #6e00ff;
+                        padding: 6em 8em 6em 4em;
+                        text-align: left;
 
-            h1{
-                font-size: 3em;
-                line-height: 1.2em;
+                        h1{
+                            font-size: 3em;
+                            line-height: 1.2em;
+                        }
+                    }
             }
-        }
-    }
+
+                @include for-desktop-up {
+                    height: 90vh;
+                    
+                }
 }
 
 .meet{

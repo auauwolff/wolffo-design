@@ -5,8 +5,17 @@ footer{
     position: relative;
     //overflow: hidden;
 
+            @include for-desktop-up {
+                padding: 2em 3em 2em 5em ;
+            }
+
     .logo img{
         width: 9%;
+
+            @include for-desktop-up {
+                width: 4%;
+                margin-left: 5em;
+            }
         
         
     }   
@@ -19,14 +28,19 @@ footer{
     top: -30%;
     width: 30%;
 
-    @include for-tablet-portrait-up {
-        
-            display: unset;
-            position: absolute;
-            left: 65%;
-            top: -25%;
-            width: 30%;
+        @include for-tablet-portrait-up {
             
-    }
+                display: unset;
+                position: absolute;
+                left: 65%;
+                top: -25%;
+                width: 30%;
+                
+        }
+
+        @include for-desktop-up {
+            top: -25%;
+        }
+    
     
 }

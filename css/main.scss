@@ -8,163 +8,6 @@
 @import "portfolio";
 @import "footer";
 
-
-
-@media only screen and (min-width: 600px) {
-    
-
-    
-}
-
-@media only screen and (min-width: 800px) {
-    
-    //dont touch this
-        .hero-design{
-            display: unset;
-            margin-left: -50%;
-            margin-top: 15%;
-            width: 100%;
-        }
-    
-
-   
-
-    // .skills{
-    //     margin-top: -5em;
-    //     margin-bottom: -7em;
-    //     padding-top: 5em;
-    // }
-
-    // .skills-container ul{
-    //     display: grid;
-    //     grid-template-columns: repeat(3, auto);
-    //     grid-gap: 1em;
-    // }
-
-
-    // .footer-design{
-    //     display: unset;
-    //     position: absolute;
-    //     left: 65%;
-    //     top: -24%;
-    //     width: 30%;
-        
-    // }
-}
-
-@media only screen and (min-width: 1050px) {
-    .hero{
-        height: 90vh;
-        
-    }
-
-    .nav-container{
-        display: grid;
-        grid-template-columns: 66% auto;
-        background: unset;
-
-        header{
-            background: #6700ee;
-        }
-
-        .logo{
-            width: 6%;
-        }
-    }
-
-    header{
-            padding: 2em 2em 2em 4em;
-    }
-
-    .social-header{
-        padding: 2em 4em 2em 0;
-    }
-
-    section{
-        padding: 4em;
-    }
-
-    .social-header{
-        display: block;
-
-        ul{
-            display: flex;
-            justify-content: space-between;
-            width: 7em;
-            float: right;
-            img{
-                width: 22px;
-            }
-        }
-    }
-
-    .featured::before{
-        content: "";
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background: #E5D5FA;
-        top: 200px;
-        left: -80px;
-        z-index: -1;
-        
-    }
-
-    .hero{
-        display: grid;
-        grid-template-columns: 66% auto;
-        background: unset;
-        padding: 0;
-
-        .content{
-            background: #6e00ff;
-            padding: 6em 8em 6em 4em;
-            text-align: left;
-
-            h1{
-                font-size: 3em;
-                line-height: 1.2em;
-            }
-        }
-    }
-        .meet{
-            margin: unset;
-        }
-
-        .hero-design{
-            display: unset;
-            margin-left: -50%;
-            margin-top: 15%;
-            width: 100%;
-        }
-
-        .portfolio img{
-            float: right;
-            max-width: 500px;
-        }
-
-        footer{
-            padding: 2em 3em 2em 5em ;
-        
-            .logo img{
-                width: 4%;
-                margin-left: 5em;
-                
-                
-            }   
-        }
-        
-        .footer-design{
-            display: unset;
-            position: absolute;
-            left: 65%;
-            top: -25%;
-            width: 30%;
-            
-        }
-}
-
 @media only screen and (min-width: 1250px) {
 
     header{
@@ -183,7 +26,6 @@
     }
 
 }
-
 
 @media only screen and (min-width: 1550px) {
 
@@ -204,10 +46,8 @@
 
 }
 
-
 .circle{
     animation: circleAnim 1.5s infinite alternate-reverse;
-
 
 }
 
