@@ -25,6 +25,7 @@ footer{
             }
 
     .logo img{
+<<<<<<< HEAD
         display: none;
         width: 9%;
 
@@ -32,12 +33,20 @@ footer{
                 display: block;
                 width: 4%;
                 margin: 1em 0 0 4em;
+=======
+        width: 9%;
+
+            @include for-desktop-up {
+                width: 4%;
+                margin-left: 5em;
+>>>>>>> fe508cf3448ac56b4a40a289bf37f776af738a96
             }
         
         
     }   
 }
 
+<<<<<<< HEAD
 .social-footer{
 
         @include for-desktop-up {
@@ -62,13 +71,20 @@ footer{
 
 }
 
+=======
+>>>>>>> fe508cf3448ac56b4a40a289bf37f776af738a96
 .footer-design{
     display: unset;
     position: absolute;
     left: 65%;
+<<<<<<< HEAD
     top: -25%;
     width: 30%;
     height: 100%;
+=======
+    top: -30%;
+    width: 30%;
+>>>>>>> fe508cf3448ac56b4a40a289bf37f776af738a96
 
         @include for-tablet-portrait-up {
             
@@ -81,8 +97,12 @@ footer{
         }
 
         @include for-desktop-up {
+<<<<<<< HEAD
             top: -20%;
             margin-left:4em;
+=======
+            top: -25%;
+>>>>>>> fe508cf3448ac56b4a40a289bf37f776af738a96
         }
     
     
