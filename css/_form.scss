@@ -1,15 +1,22 @@
+<<<<<<< HEAD
 input, textarea{
     font-family: 'Poppins', arial;
 }
 
+=======
+>>>>>>> fe508cf3448ac56b4a40a289bf37f776af738a96
 .modal-form{
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100%;
+<<<<<<< HEAD
    // background-color: rgba(0, 0, 0, 0.5);
    background-color: #fafafa;
+=======
+    background-color: rgba(0, 0, 0, 0.5);
+>>>>>>> fe508cf3448ac56b4a40a289bf37f776af738a96
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,9 +30,13 @@ input, textarea{
 
     .modal{
         position: relative;
+<<<<<<< HEAD
         background-color: #fff;
         box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
         //background-color: whitesmoke;
+=======
+        background-color: whitesmoke;
+>>>>>>> fe508cf3448ac56b4a40a289bf37f776af738a96
         width: 50vh;
         //height: 100px;
         display: flex;
@@ -34,7 +45,10 @@ input, textarea{
         flex-direction: column;
         border-radius: 1em;
         padding: 25px 50px;
+<<<<<<< HEAD
         z-index: 1000;
+=======
+>>>>>>> fe508cf3448ac56b4a40a289bf37f776af738a96
 
             h3{
                 font-weight: 500;
@@ -81,8 +95,11 @@ input, textarea{
 }
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> fe508cf3448ac56b4a40a289bf37f776af738a96
 .active{
     visibility: visible;
     opacity: 1;
