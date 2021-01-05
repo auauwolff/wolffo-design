@@ -113,6 +113,11 @@ input, textarea{
               transform: translateY(0);
             }
 
+            .input-container.input label {
+              top: 1rem;
+              transform: translateY(0);
+            }
+
 
             .input-field{
                 margin-bottom: .5em;
