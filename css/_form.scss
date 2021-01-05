@@ -45,6 +45,7 @@ input, textarea{
             .input-container {
               position: relative;
               margin: 1rem 0;
+              
             }
             .input-container label{
                 position: absolute;
@@ -160,6 +161,8 @@ input, textarea{
                 transition: 0.3s;
                 cursor: pointer;
                 outline: none;
+                -webkit-appearance: none;
+                
                 &:focus{
                     outline-color: none;
                 }
