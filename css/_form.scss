@@ -25,7 +25,7 @@ input, textarea{
         position: relative;
         background-color: #6700ee;
         box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-        width: 25vh;
+        width: 30vh;
         //height: 100px;
         display: flex;
         justify-content: space-evenly;
@@ -162,7 +162,7 @@ input, textarea{
                 cursor: pointer;
                 outline: none;
                 -webkit-appearance: none;
-                
+
                 &:focus{
                     outline-color: none;
                 }
