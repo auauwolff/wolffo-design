@@ -112,11 +112,4 @@ header{
     margin-top: 2em;
 }
 
-section{
-    padding: 4em 2em;
-    text-align: center;
 
-    @include for-tablet-landscape-up{
-        padding: 4em;
-    }
-}
