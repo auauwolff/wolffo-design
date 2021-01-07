@@ -88,10 +88,10 @@
 }
 
 section{
-   // padding: 4em 2em;
+    padding: 4em 2em;
     text-align: center;
 
     @include for-tablet-landscape-up{
-        //padding: 4em;
+        padding: 4em;
     }
 }
