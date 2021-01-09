@@ -3,6 +3,7 @@ footer{
     background: #6e00ff;
     padding: 2em 1em 1em 4em ;
     position: relative;
+    margin-top: 8em;
 
         @include for-tablet-landscape-up{
             padding: 2em 8em 1em 8em;

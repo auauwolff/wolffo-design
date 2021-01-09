@@ -50,15 +50,21 @@ gsap.from(".transition3", {
 
 //------MODAL FORM-----/////
 
-var btnContact = document.querySelector(".contact");
+var btnContact = document.querySelectorAll(".contact");
 var modalBg = document.querySelector(".modal-form");
 var close = document.querySelector(".close");
 
 const inputs = document.querySelectorAll(".input");
 
-btnContact.addEventListener('click', function () {
-modalBg.classList.add("active");
-});
+for (var i = 0 ; i < btnContact.length; i++) {
+  btnContact[i].addEventListener('click', function () {
+    modalBg.classList.add("active");
+    });
+}
+
+// btnContact.addEventListener('click', function () {
+// modalBg.classList.add("active");
+// });
 
 close.addEventListener('click', function () {
 modalBg.classList.remove("active");
@@ -82,3 +88,5 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
+
+

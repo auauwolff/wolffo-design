@@ -1,7 +1,7 @@
 header{
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 1em 3.5em;
 
             @include for-tablet-landscape-up{
                 padding: 2em 2em 2em 4em;

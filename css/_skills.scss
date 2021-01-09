@@ -1,5 +1,6 @@
 .skills{
     background: #ff64cb;
+    padding: 4em 3em;
         
         @include for-tablet-landscape-up {
             padding: 3em 8em;
@@ -21,7 +22,7 @@
 
 .skills-container ul li{
     background: white;
-    padding: 2em;
+    padding: 1em 2em;
     border-radius: 1em;
     margin-bottom: 1em;
 
