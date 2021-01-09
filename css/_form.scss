@@ -17,6 +17,7 @@ input, textarea{
     transition: visibility 0s, opacity 0.5s;
     z-index: 10;
     
+    
 
     
 
@@ -25,14 +26,16 @@ input, textarea{
         background-color: #6700ee;
         box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
         width: 65%;
-        //height: 100px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
         border-radius: 1em;
         padding: 25px 70px 25px 25px;
-        //z-index: 1000;
+
+                @include for-tablet-landscape-up{
+                  width: 25%;
+                 }
 
             h3{
                 font-weight: 500;
