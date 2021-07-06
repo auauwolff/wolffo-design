@@ -90,3 +90,32 @@ inputs.forEach((input) => {
 });
 
 
+// var $featured = $('#featured');
+// $(window).scroll(function() {
+//   if ($(this).scrollTop() > 10) {
+//     $featured.addClass('fade');
+//   } else {
+//     $featured.removeClass('fade');
+//   }
+// })
+
+// const [red, green, blue] = [69, 111, 225]
+// const featured = document.querySelector('.featured')
+
+// window.addEventListener('scroll', () => {
+//   let y = 1 + (window.scrollY || window.pageYOffset) / 150
+//   y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
+//   const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+//   featured.addClass('fade');
+//   //featured.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+// })
+
+var featured = document.querySelector('.featured');
+
+featured.addEventListener('mouseenter', function(){
+   featured.style.setProperty('--before-left', '#ff64cb');
+});
+
+featured.addEventListener('mouseleave', function(){
+  featured.style.setProperty('--before-left', '#E5D5FA');
+});

@@ -16,9 +16,15 @@
 
     .social-header{
         padding: 3.5em 10em 2em 0;
+
+        @include  for-big-desktop-up{
+            margin-top: 5%;
+        }
     }
     section {
         padding: 10em 10em 4em 10em;
+
+        
     }
 
     .hero .content{
@@ -26,6 +32,9 @@
     }
 
 }
+
+
+
 
 @media only screen and (min-width: 1550px) {
 
@@ -45,6 +54,13 @@
     }
 
 }
+
+@include  for-big-desktop-up{
+    section {
+        padding: 0em 0em 0em 0em;
+    }
+}
+
 
 .circle{
     animation: circleAnim 1.5s infinite alternate-reverse;

@@ -1,6 +1,7 @@
 .nav-container{
     background: #6700EE;
    
+   
 
             .logo{
                 width: 14%;
@@ -34,11 +35,15 @@
                         }
                     }
 
+                    
+
         a{
             color: white;
             &:hover{
                 color: aqua;
             }
+
+            
         }
 
         .my-skills {
@@ -56,4 +61,11 @@
                     display: block;
                 }
         }
+}
+
+
+@include  for-big-desktop-up{
+    nav{
+        padding-top: 1%;
+    }
 }
