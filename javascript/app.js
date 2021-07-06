@@ -106,11 +106,11 @@ window.addEventListener('scroll', () => {
   let y = 1 + (window.scrollY || window.pageYOffset) / 150
   y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
   //const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
-  const [r, g, b] = [225, 100, 203]
+ // const [r, g, b] = [225, 100, 203]
   
   //featured.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
   featured.style.setProperty('--transition0', '5s')
- featured.style.setProperty('--before-left', `rgb(${r}, ${g}, ${b})`);
+ featured.style.setProperty('--before-left', '#ff64cb');
 })
 
 // var featured = document.querySelector('.featured');
