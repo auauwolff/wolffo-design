@@ -109,7 +109,7 @@ window.addEventListener('scroll', () => {
  // const [r, g, b] = [225, 100, 203]
   
   //featured.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
-  featured.style.setProperty('--transition0', '5s')
+  featured.style.setProperty('--transition0', '7s')
  featured.style.setProperty('--before-left', '#ff64cb');
 })
 
