@@ -99,23 +99,25 @@ inputs.forEach((input) => {
 //   }
 // })
 
-// const [red, green, blue] = [69, 111, 225]
-// const featured = document.querySelector('.featured')
+const [red, green, blue] = [229, 213, 250]
+const featured = document.querySelector('.featured')
 
-// window.addEventListener('scroll', () => {
-//   let y = 1 + (window.scrollY || window.pageYOffset) / 150
-//   y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
-//   const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
-//   featured.addClass('fade');
-//   //featured.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
-// })
+window.addEventListener('scroll', () => {
+  let y = 1 + (window.scrollY || window.pageYOffset) / 150
+  y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
+  //const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+  const [r, g, b] = [225/y, 100/y, 203/y]
+  
+  //featured.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+ featured.style.setProperty('--before-left', `rgb(${r}, ${g}, ${b})`);
+})
 
-var featured = document.querySelector('.featured');
+// var featured = document.querySelector('.featured');
 
-featured.addEventListener('mouseenter', function(){
-   featured.style.setProperty('--before-left', '#ff64cb');
-});
+// featured.addEventListener('mouseenter', function(){
+//    featured.style.setProperty('--before-left', '#ff64cb');
+// });
 
-featured.addEventListener('mouseleave', function(){
-  featured.style.setProperty('--before-left', '#E5D5FA');
-});
+// featured.addEventListener('mouseleave', function(){
+//   featured.style.setProperty('--before-left', '#E5D5FA');
+// });
