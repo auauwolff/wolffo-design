@@ -1,5 +1,6 @@
 .featured{
     --before-left : #E5D5FA;
+    --transition0 : 0;
     position: relative;
 
         @include for-tablet-landscape-up{
@@ -28,6 +29,7 @@
     height: 200px;
     border-radius: 50%;
     background: var(--before-left);
+    transition: var(--transition0);
    // background: #E5D5FA;
     top: -130px;
     left: 50%;
